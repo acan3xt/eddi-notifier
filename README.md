@@ -3,6 +3,8 @@
 エッヂ掲示板の最新スレッド一覧を定期的に取得し、  
 指定したキーワードを含む新規スレッドが立った場合にDiscordへ自動通知するGoogle Apps Scriptです。
 
+<img width="618" height="329" alt="image" src="https://github.com/user-attachments/assets/12d43cb3-a5eb-4f51-b136-f61581c68078" />
+
 ---
 
 # 特徴
