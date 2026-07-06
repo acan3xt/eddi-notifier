@@ -44,7 +44,7 @@ Webhook URLは絶対に他人に公開しないでください
 https://script.google.com/home
 
 - 新しいプロジェクトを作成
-- `Code.gs` にスクリプト (https://github.com/acan3xt/eddi-notifier/blob/main/Google%20Apps%20Script) を貼り付け
+- `Code.gs` にスクリプト eddiNotifier.gs (https://github.com/acan3xt/eddi-notifier/blob/main/eddiNotifier.gs) を貼り付け
 - 初期生成される `myFunction()` などの関数はすべて削除
 
 ---
