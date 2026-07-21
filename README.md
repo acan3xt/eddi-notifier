@@ -1,5 +1,7 @@
 # エッヂャーアラート (eddi-notifier)
 
+目次： [特徴](#特徴) | [必要なもの](#必要なもの) | [導入方法](#導入方法) | [Discord Webhook URLの取得](#1-discord-webhook-urlの取得) | [Google Apps Scriptの作成](#2-google-apps-script-の作成) | [Webhook URLの設定](#3-webhook-urlの設定) | [監視する掲示板の設定](#4-監視する掲示板の設定) | [初回実行時の注意](#5-初回実行時の注意) | [自動実行用のトリガー設定](#6-自動実行用のトリガー設定) | [キーワードの設定](#7-キーワードの設定) | [Discord表示設定](#8-discord表示設定) | [License](#license)
+
 エッヂ掲示板と一部の5ch掲示板（なんG、なんJ、ニュー速VIP、嫌儲）のスレッド一覧を定期的に取得し、
 指定したキーワードを含む新規スレッドが立った際にDiscordへ自動通知するGoogle Apps Script（GAS）です。
 
