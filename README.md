@@ -22,6 +22,16 @@
 - オリジナルURLとkyodemoの通知リンク切替
 - エッヂのスレッド一覧取得方法を選択可能
 
+## 対応掲示板
+
+現在、以下の掲示板に対応しています。
+
+- エッヂ
+- 5ch なんG
+- 5ch なんJ
+- 5ch ニュー速VIP
+- 5ch 嫌儲
+
 ## 必要なもの
 
 - Googleアカウント
@@ -47,7 +57,7 @@ Webhook URLは絶対に他人に公開しないでください
 
 ## 2. Google Apps Script の作成
 
-https://script.google.com/home
+[Google Apps Script](https://script.google.com/home) https://script.google.com/home にアクセス。
 
 - 新しいプロジェクトを作成
 - `Code.gs` にスクリプト eddiNotifier.gs (https://github.com/acan3xt/eddi-notifier/blob/main/eddiNotifier.gs) を貼り付け
@@ -156,6 +166,7 @@ const EXCLUDE_KEYWORDS = [
   "除外ワード03"
 ];
 ```
+> **注意:** `KEYWORDS` を空の配列 `[]` にすると、キーワードによる絞り込みを行わず、すべての新規スレッドが通知対象になります。
 
 ---
 
@@ -173,6 +184,30 @@ const LINK_MODE = "both";
 Discordの通知にオリジナルのリンクのみを表示させたい場合はconst LINK_MODE = "both"; から"original"に書き換えてください。
 
 デフォルトでは両方表示されています。
+
+---
+
+## トラブルシューティング
+
+#### Discordに通知されない
+
+以下を確認してください。
+
+- Discord Webhook URLが正しく設定されているか
+- `KEYWORDS` に設定したキーワードがスレッドタイトルに含まれているか
+- `EXCLUDE_KEYWORDS` に設定した除外ワードが含まれていないか
+- 監視対象の掲示板が`true`になっているか
+- トリガーが正常に設定されているか
+- Google Apps Scriptの「実行数」でエラーが発生していないか
+
+#### 同じスレッドが通知されない
+
+一度通知されたスレッドは既読情報に記録されるため、同じスレッドが再度通知されることはありません。
+
+---
+
+## Contact
+zuzutotoあoutlook.jp
 
 ---
 
