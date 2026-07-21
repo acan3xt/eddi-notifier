@@ -122,4 +122,6 @@ Discordの通知にeddibbsのリンクのみを表示させたい場合はconst 
 デフォルトでは両方表示されています。
 
 ---
-This project is licensed under the MIT License.
+## License
+
+This project is licensed under the BSD Zero Clause License (0BSD).
